@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+body{
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+color: white; 
+background-color: rgb(29, 28, 28);
+
+}
+
+.container{
+
+    background-color: rgb(92, 107, 107);
+    padding: 6rem;
+    border-radius: 10%;
+    height: 60vh;
+    width: 40vh;
+    box-shadow: 0 0 20rem rgb(28, 75, 78) ;
+    border : 4px solid white ; 
+    animation: borderline  4s infinite ease-in-out  ;
+}
+@keyframes borderline{
+    25%{
+        border: 4px solid white;
+    }
+    25%{
+        border: 4px solid rgb(75, 75, 85);
+    }
+    25%{
+        border: 4px solid white;
+    }
+    25%{
+        border: 4px solid rgb(37, 37, 65);
+    }
+    
+}
+
+form{
+    margin: 2rem 0px 2rem 0px;
+    
+}
+
+form select , button , input , .amount  {
+
+width: 100%;
+border: none;
+outline: none;
+border-radius: 0.25rem;
+font-size: 1.4rem;
+font-weight: 600;
+color: rgb(4, 41, 46);
+cursor: pointer;
+
+
+}
+
+input{
+
+    padding-left: 0.75rem;
+    height: 2.4rem;
+    font-size: 1.3rem;
+
+}
+
+.dropdowns{
+
+    display: flex; 
+    justify-content:space-between ;
+    align-items: center;
+    margin: 3rem 0 3rem 0 ;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+
+}
+
+i{
+    transform: scale(3);
+}
+
+.msg{
+    font-weight: 500;
+    margin: 0 0 1.4rem 0 ;
+    text-align:center ;
+    font-size: 2rem;
+    color: rgba(8, 42, 61, 0.904);
+    background-color: aqua;
+    border-radius: 1rem;
+}
+
+button{
+
+border-radius: 1rem;
+transition: all 0.3s ease-in-out 0s ;
+&:hover{
+    background-color: aquamarine;
+}
+
+}
+
+.output{
+
+    padding: 0.75rem 0 0 0.75rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    background-color: white;
+    color: rgb(22, 105, 78);
+    border-radius: 0.25rem;
+    
+
+
+}
+
+#select2{
+    
+
+text-align: end;
+
+}
+
+/* for phone */
+
+@media (max-width:360px) , (max-width:640px){
+
+
+    form select , button , input , .amount  {
+
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 0.25rem;
+        font-size: rem;
+        font-weight: 600;
+        color: rgb(4, 41, 46);
+        cursor: pointer;
+        
+        
+        }
+
+        i{
+            transform: scale(1);
+        }
+        .container{
+
+            background-color: rgb(92, 107, 107);
+            padding: 1.6rem;
+            border-radius: 5%;
+            height: auto;
+            width: 27vh;
+            box-shadow: 0 0 20rem rgb(28, 75, 78) ;
+            border : 4px solid white ; 
+            animation: borderline  4s infinite ease-in-out  ;
+            font-size: 0.5rem;
+        }
+
+
+        form{
+            margin: 0.5rem 0px 0.5rem 0px;
+            
+        }
+        .output{
+
+            padding: 0.2rem 0 0 0.2rem;
+            height: 1.4rem;
+            font-size: 0.7rem;
+            background-color: white;
+            color: rgb(22, 105, 78);
+            border-radius: 0.25rem;
+            align-content: center;
+            
+        
+        
+        }
+
+        
+.msg{
+    font-weight: 500;
+    margin: 0 0 1.2rem 0 ;
+    text-align:center ;
+    font-size: 1rem;
+    color: rgba(8, 42, 61, 0.904);
+    background-color: aqua;
+    border-radius: 1rem;
+    height: 30px;
+    align-content: center;
+  
+}
+.amount {
+    margin-top: 0px;
+}
+
+#am{
+    margin-top: 0px 
+}
+
+
+.dropdowns{
+
+    display: flex; 
+    justify-content:space-between ;
+    align-items: center;
+    margin: 0.4rem 0 0.4rem 0 ;
+    font-size: 1rem;
+    font-weight: 600;
+
+
+}
+button{
+    height: 40px ;
+    font-size: 0.8rem
+}
+ 
+.To , .From{
+    transform: scale(0.8)
+}
+
+.exchange_txt{
+
+}
+
+
+}
+
+;
+/* for tablet */
+
+
+@media (max-width:768px) , (max-width:1024px){
+
+
+    form select , button , input , .amount  {
+
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 0.25rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: rgb(4, 41, 46);
+        cursor: pointer;
+        
+        
+        }
+
+        i{
+            transform: scale(3);
+        }
+        .container{
+
+            background-color: rgb(92, 107, 107);
+            padding:2rem 6rem 6rem 6rem;
+            border-radius: 5%;
+            height: 60vh;
+            width: 40vh;
+            box-shadow: 0 0 20rem rgb(28, 75, 78) ;
+            border : 4px solid white ; 
+            animation: borderline  4s infinite ease-in-out  ;
+            font-size: 1.3rem;
+        }
+
+
+        form{
+            margin: 2.3rem 0px 2.5rem 0px;
+            
+        }
+        .output{
+
+            padding: 0.25rem 0 0 0.25rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            background-color: white;
+            color: rgb(22, 105, 78);
+            border-radius: 0.25rem;
+            align-content: center;
+            
+        
+        
+        }
+
+        
+.msg{
+    font-weight: 500;
+    margin: -10px 0 1.2rem 0 ;
+    text-align:center ;
+    font-size: 1.5rem;
+    color: rgba(8, 42, 61, 0.904);
+    background-color: aqua;
+    border-radius: 1rem;
+    height: 60px;
+    align-content: center;
+  
+}
+.amount {
+    margin-top: -25px;
+}
+
+#am{
+    margin-top: 25px 
+}
+
+
+.dropdowns{
+
+    display: flex; 
+    justify-content:space-between ;
+    align-items: center;
+    margin: 1rem 0 2rem 0 ;
+    font-size: 1rem;
+    font-weight: 600;
+
+
+}
+
+}
+;
+
+@media (max-width:992px) , (max-width:1200px){
+
+
+    form select , button , input , .amount  {
+
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 0.25rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: rgb(4, 41, 46);
+        cursor: pointer;
+        
+        
+        }
+
+        i{
+            transform: scale(3);
+        }
+        .container{
+
+            background-color: rgb(92, 107, 107);
+            padding:2rem 6rem 6rem 6rem;
+            border-radius: 5%;
+            height: 60vh;
+            width: 40vh;
+            box-shadow: 0 0 20rem rgb(28, 75, 78) ;
+            border : 4px solid white ; 
+            animation: borderline  4s infinite ease-in-out  ;
+            font-size: 1.3rem;
+        }
+
+
+        form{
+            margin: 2.3rem 0px 2.5rem 0px;
+            
+        }
+        .output{
+
+            padding: 0.25rem 0 0 0.25rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            background-color: white;
+            color: rgb(22, 105, 78);
+            border-radius: 0.25rem;
+            align-content: center;
+            
+        
+        
+        }
+
+        
+.msg{
+    font-weight: 500;
+    margin: -10px 0 1.2rem 0 ;
+    text-align:center ;
+    font-size: 1.5rem;
+    color: rgba(8, 42, 61, 0.904);
+    background-color: aqua;
+    border-radius: 1rem;
+    height: 60px;
+    align-content: center;
+  
+}
+.amount {
+    margin-top: -25px;
+}
+
+#am{
+    margin-top: 25px 
+}
+
+
+.dropdowns{
+
+    display: flex; 
+    justify-content:space-between ;
+    align-items: center;
+    margin: 1rem 0 2rem 0 ;
+    font-size: 1rem;
+    font-weight: 600;
+
+
+}
+
+}
+
