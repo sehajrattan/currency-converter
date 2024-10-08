@@ -53,6 +53,8 @@ let amount_val = amount.value;
 if(amount_val = "" || amount_val<0){
     amount_val = "1" ;
     amount.value = 1 ;
+  msg.innerText = "Enter an amount" ;
+  output.innerText = "No amount entered" ;
 }
 // console.log(fromCurr.value.toLowerCase() , toCurr.value.toLowerCase()) ;
 
