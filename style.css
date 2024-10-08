@@ -132,7 +132,7 @@ text-align: end;
 
     form select , button , input , .amount  {
 
-        width: 100%;
+        width: 60%;
         border: none;
         outline: none;
         border-radius: 0.25rem;
