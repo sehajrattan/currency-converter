@@ -66,6 +66,6 @@ console.log(`${toCurr.value}`, currency_convert[toCurr.value]) ;
 
 output.innerText =  currency_convert[toCurr.value]*amount.value;
 
-msg.innerText = `1${fromCurr.value} = ${toCurr.value}` ;
+msg.innerText = `1${fromCurr.value} = ${currency_convert[toCurr.value]}${toCurr.value}` ;
 
 })
