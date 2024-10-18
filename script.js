@@ -50,22 +50,24 @@ btn.addEventListener("click" , async (evt)=>{
 evt.preventDefault() ;
 let amount = document.querySelector(".amount input") ;
 let amount_val = amount.value;
-if(amount_val = "" || amount_val<0){
-    amount_val = "1" ;
-    amount.value = 1 ;
-  msg.innerText = "Enter an amount" ;
-  output.innerText = "No amount entered" ;
-}
+
+
+
+
 // console.log(fromCurr.value.toLowerCase() , toCurr.value.toLowerCase()) ;
 
 const URL = `${BASE_URL}/${fromCurr.value}`;
-let response = await fetch(URL) ;
+let response = await fetch(URL);
 let data = await response.json();
-let currency_convert = data.conversion_rates ;
-console.log(`${toCurr.value}`, currency_convert[toCurr.value]) ;
+let currency_convert = data.conversion_rates;
+console.log(`${toCurr.value}`, currency_convert[toCurr.value]);
 
-output.innerText =  currency_convert[toCurr.value]*amount.value;
-
-msg.innerText = `1${fromCurr.value} = ${currency_convert[toCurr.value]}${toCurr.value}` ;
+if (amount.value === "" || amount.value <= 0) {
+    msg.innerText = "Enter a valid amount";
+    output.innerText = currency_convert[toCurr.value] * amount.value || 0; 
+} else {
+    output.innerText = currency_convert[toCurr.value] * amount.value;
+    msg.innerText = `1 ${fromCurr.value} = ${currency_convert[toCurr.value]} ${toCurr.value}`;
+}
 
 })
